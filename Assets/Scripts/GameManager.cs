@@ -1,14 +1,15 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private UnityEvent onVirusExe;
+    [SerializeField] private UnityEvent onLogIn;
     
     public static GameManager Instance {get; private set;}
 
-    public void VirusExe(){
-        onVirusExe.Invoke();
+   public void LogIn(){
+        onLogIn.Invoke();
     }
 }
