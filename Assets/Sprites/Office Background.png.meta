@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Office Background_0: 7392250303069158312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
