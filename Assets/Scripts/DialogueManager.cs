@@ -1,25 +1,20 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using DialogueEditor;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+//using DialogueEditor;
 
 public class DialogueManager : MonoBehaviour
 {
-    public NPCConversation[] Conversations;
+    [SerializeField] NPCConversation[] Conversations;
     public void Start(){
-        ConversationManager.Instance.StartConversation(Conversations[0]);
+
     }
-    public void OnLoggedIn(){
+
+    public void OnStartGame() {
+        ConversationManager.Instance.StartConversation(Conversations[0]);      
+    }
+    public void OnFinishedIntro(){
         ConversationManager.Instance.StartConversation(Conversations[1]);
-    }
-
-    public void OnInternetConnection(){
-        StartCoroutine(InternetConnection());
-    }
-
-    IEnumerator InternetConnection(){
-        yield return new WaitForSeconds(1.5f);
-        ConversationManager.Instance.StartConversation(Conversations[2]);
     }
 }
