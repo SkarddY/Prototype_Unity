@@ -7,13 +7,14 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] NPCConversation[] Conversations;
-    public void Start(){
-
+    public void Awake(){
+        ConversationManager.Instance.StartConversation(Conversations[0]);
     }
 
-    public void OnStartGame() {
+    //BUTTONS FOR CONVERSATION CHANGES
+    /*public void OnStartGame() {
         ConversationManager.Instance.StartConversation(Conversations[0]);      
-    }
+    } */
     public void OnFinishedIntro(){
         ConversationManager.Instance.StartConversation(Conversations[1]);
     }
