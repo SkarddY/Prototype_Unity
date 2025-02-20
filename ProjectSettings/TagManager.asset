@@ -9,6 +9,7 @@ TagManager:
   - PaperZone02
   - MazeOffLimits
   - MazeItem
+  - MazeEnd
   layers:
   - Default
   - TransparentFX

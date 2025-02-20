@@ -1,18 +1,18 @@
 using UnityEngine;
-using System.Collections.Generic;
 using UnityEngine.Events;
-using System;
 
 public class MazeMovement : MonoBehaviour
 {
     [SerializeField] Transform spawnPos, itemPos;
     [SerializeField] UnityEvent onPickObject, OnGameEnd;
-    [SerializeField] GameObject itemMaze;
-    [SerializeField] Animation itemMazeAnim;
-    public float moveSpeed = 5f;
+    [SerializeField] GameObject itemMaze, mazeEnding;
+    public float moveSpeed = 2.5f;
+    private bool isCoffeePicked;
     void Start()
     {
-        transform.position = spawnPos.position; // Start at snap point
+        isCoffeePicked = false;
+        mazeEnding.SetActive(false);
+        transform.position = spawnPos.position; //Start at spawn point
     }
 
     void Update()
@@ -29,11 +29,17 @@ public class MazeMovement : MonoBehaviour
         if (collision.CompareTag("MazeItem")){
             onPickObject.Invoke();
         }
+        if (collision.CompareTag("MazeEnd")){
+            OnGameEnd.Invoke();
+        }
     }
     public void PickObject(){
-        itemMazeAnim.Stop();
-        itemMaze.transform.SetParent(itemPos.transform);
         itemMaze.transform.position = itemPos.position;
-        Debug.Log("Picking object");
+        isCoffeePicked = true;
+        Debug.Log($"Is Picked {isCoffeePicked}, and setting {mazeEnding} on {onPickObject}");
+    }
+
+    public void GameEnd(){
+        Debug.Log("Maze completed!");
     }
 }
