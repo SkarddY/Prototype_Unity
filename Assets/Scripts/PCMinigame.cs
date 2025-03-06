@@ -11,6 +11,12 @@ public class PCMinigame : MonoBehaviour
         isFront = true;
         isBack = false; isLeftSide = false; isRightSide = false;
     }
+    void Update()
+    {
+        if (snapCable.isConnected == true && isFront == true) {
+            snapCable.powerButton.SetActive(true);
+        } else snapCable.powerButton.SetActive(false);
+    }
     public void OnLeftButton() {
         if (isFront == true) {
             pCObject.transform.rotation = Quaternion.Euler(0,0,0);

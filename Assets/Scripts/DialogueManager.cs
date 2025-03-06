@@ -6,12 +6,37 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] NPCConversation[] Conversations;
     [SerializeField] GameObject[] Minigames;
+    [SerializeField] GameObject DialogueCanva;
+    
     public void Awake() {
         ConversationManager.Instance.StartConversation(Conversations[0]);
     }
 
     public void OnTutorialEnd() {
         Conversations[0].gameObject.SetActive(false);
+        ConversationManager.Instance.StartConversation(Conversations[1]);
+    }
+
+    //PC RESTART MINIGAME SETTINGS
+    public void OnRestartMinigame() {
+        ConversationManager.Instance.EndConversation();
+        DialogueCanva.SetActive(false);
+        StartCoroutine(RestartMinigame());
+    }
+    IEnumerator RestartMinigame() {
+        Debug.Log("Waiting to start minigame");
+        yield return new WaitForSeconds(1.25f);
+        Minigames[2].SetActive(true);
+        Debug.Log("Minigame started");
+    }
+    public void OnRestartMinigameEnd() {
+        StartCoroutine(RestartMinigameEnd());
+    }
+    IEnumerator RestartMinigameEnd() {
+        yield return new WaitForSeconds(0.25f);
+        Minigames[2].SetActive(false);
+        yield return new WaitForSeconds(1.75f);
+        DialogueCanva.SetActive(true);
         ConversationManager.Instance.StartConversation(Conversations[1]);
     }
 
