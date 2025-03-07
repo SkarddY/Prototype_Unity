@@ -13,8 +13,12 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void OnTutorialEnd() {
+        StartCoroutine(TutorialEnd());
+    }
+    IEnumerator TutorialEnd() {
+        yield return new WaitForSeconds(1.25f);
         Conversations[0].gameObject.SetActive(false);
-        ConversationManager.Instance.StartConversation(Conversations[1]);
+        ConversationManager.Instance.StartConversation(Conversations[2]);
     }
 
     //PC RESTART MINIGAME SETTINGS
@@ -25,18 +29,16 @@ public class DialogueManager : MonoBehaviour
     }
     IEnumerator RestartMinigame() {
         Debug.Log("Waiting to start minigame");
-        yield return new WaitForSeconds(1.25f);
-        Minigames[2].SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        Minigames[0].SetActive(true);
         Debug.Log("Minigame started");
     }
     public void OnRestartMinigameEnd() {
         StartCoroutine(RestartMinigameEnd());
     }
     IEnumerator RestartMinigameEnd() {
-        yield return new WaitForSeconds(0.25f);
-        Minigames[2].SetActive(false);
-        yield return new WaitForSeconds(1.75f);
-        DialogueCanva.SetActive(true);
+        yield return new WaitForSeconds(1.25f);
+        Minigames[0].SetActive(false); DialogueCanva.SetActive(true);
         ConversationManager.Instance.StartConversation(Conversations[1]);
     }
 
@@ -48,11 +50,11 @@ public class DialogueManager : MonoBehaviour
     IEnumerator FirstMinigameStart() {
         Debug.Log("Waiting to start Minigame");
         yield return new WaitForSeconds(1.25f);
-        Minigames[0].SetActive(true);
+        Minigames[1].SetActive(true);
         Debug.Log("Minigame started");
     }
     public void OnFirstMinigameEnd() { 
-        ConversationManager.Instance.StartConversation(Conversations[2]);
+        ConversationManager.Instance.StartConversation(Conversations[3]);
     }
 
     //SECOND MINIGAME START AND END SETTINGS
@@ -63,11 +65,11 @@ public class DialogueManager : MonoBehaviour
     IEnumerator SecondMinigameStart() {
         Debug.Log("Waiting to start minigame");
         yield return new WaitForSeconds(1.25f);
-        Minigames[1].SetActive(true);
+        Minigames[2].SetActive(true);
         Debug.Log("Second minigame started");
     }
     public void OnSecondMinigameEnd() {
-        ConversationManager.Instance.StartConversation(Conversations[3]);
+        ConversationManager.Instance.StartConversation(Conversations[4]);
     }
 
 } 
