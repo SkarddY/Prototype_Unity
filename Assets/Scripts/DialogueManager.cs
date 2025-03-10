@@ -72,5 +72,10 @@ public class DialogueManager : MonoBehaviour
         ConversationManager.Instance.StartConversation(Conversations[4]);
     }
 
+    //MESA DE AYUDA OPTION
+    public void OnMesaDeAyudaOption() {
+        ConversationManager.Instance.EndConversation();
+        ConversationManager.Instance.StartConversation(Conversations[5]);
+    }
 } 
 

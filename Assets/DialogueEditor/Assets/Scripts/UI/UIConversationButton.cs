@@ -194,7 +194,7 @@ namespace DialogueEditor
 
                 case eButtonType.End:
                     {
-                        TextMesh.text = "";
+                        TextMesh.text = "FINALIZAR";
                         TextMesh.font = endFont;
                     }
                     break;
