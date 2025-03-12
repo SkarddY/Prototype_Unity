@@ -5,7 +5,7 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] NPCConversation[] Conversations;
     [SerializeField] GameObject[] Minigames;
-    [SerializeField] GameObject DialogueCanva;
+    [SerializeField] GameObject dialogueCanva, endGameCanva;
     
     public void Awake() {
         ConversationManager.Instance.StartConversation(Conversations[0]);
@@ -16,16 +16,16 @@ public class DialogueManager : MonoBehaviour
     }
     IEnumerator TutorialEnd() {
         ConversationManager.Instance.EndConversation();
-        DialogueCanva.SetActive(false);
+        dialogueCanva.SetActive(false);
         yield return new WaitForSeconds(1.25f);
         ConversationManager.Instance.StartConversation(Conversations[2]);
-        DialogueCanva.SetActive(true);
+        dialogueCanva.SetActive(true);
     }
 
     //PC RESTART MINIGAME SETTINGS
     public void OnRestartMinigame() {
         ConversationManager.Instance.EndConversation();
-        DialogueCanva.SetActive(false);
+        dialogueCanva.SetActive(false);
         StartCoroutine(RestartMinigame());
     }
     IEnumerator RestartMinigame() {
@@ -39,14 +39,14 @@ public class DialogueManager : MonoBehaviour
     }
     IEnumerator RestartMinigameEnd() {
         yield return new WaitForSeconds(1.25f);
-        Minigames[0].SetActive(false); DialogueCanva.SetActive(true);
+        Minigames[0].SetActive(false); dialogueCanva.SetActive(true);
         ConversationManager.Instance.StartConversation(Conversations[1]);
     }
 
     //FIRST MINIGAME START AND END SETTINGS
     public void OnFirstMinigameStart() {
         ConversationManager.Instance.EndConversation();
-        DialogueCanva.SetActive(false);
+        dialogueCanva.SetActive(false);
         StartCoroutine(FirstMinigameStart());
     }
     IEnumerator FirstMinigameStart() {
@@ -56,14 +56,14 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Minigame started");
     }
     public void OnFirstMinigameEnd() { 
-        DialogueCanva.SetActive(true);
+        dialogueCanva.SetActive(true);
         ConversationManager.Instance.StartConversation(Conversations[3]);
     }
 
     //SECOND MINIGAME START AND END SETTINGS
     public void OnSecondMinigameStart() {
         ConversationManager.Instance.EndConversation();
-        DialogueCanva.SetActive(false);
+        dialogueCanva.SetActive(false);
         StartCoroutine(SecondMinigameStart());
     }
     IEnumerator SecondMinigameStart() {
@@ -73,7 +73,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Second minigame started");
     }
     public void OnSecondMinigameEnd() {
-        DialogueCanva.SetActive(true);
+        dialogueCanva.SetActive(true);
         ConversationManager.Instance.StartConversation(Conversations[4]);
     }
 
@@ -82,5 +82,14 @@ public class DialogueManager : MonoBehaviour
         ConversationManager.Instance.EndConversation();
         ConversationManager.Instance.StartConversation(Conversations[5]);
     }
+
+    //END GAME
+    public void OnGameEnd() {
+        ConversationManager.Instance.EndConversation();
+        dialogueCanva.SetActive(false);
+        endGameCanva.SetActive(true);
+    }
+
 } 
+
 
