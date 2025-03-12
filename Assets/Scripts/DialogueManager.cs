@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using DialogueEditor;
 using UnityEngine;
@@ -45,6 +44,7 @@ public class DialogueManager : MonoBehaviour
     //FIRST MINIGAME START AND END SETTINGS
     public void OnFirstMinigameStart() {
         ConversationManager.Instance.EndConversation();
+        DialogueCanva.SetActive(false);
         StartCoroutine(FirstMinigameStart());
     }
     IEnumerator FirstMinigameStart() {
@@ -54,12 +54,14 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Minigame started");
     }
     public void OnFirstMinigameEnd() { 
+        DialogueCanva.SetActive(true);
         ConversationManager.Instance.StartConversation(Conversations[3]);
     }
 
     //SECOND MINIGAME START AND END SETTINGS
     public void OnSecondMinigameStart() {
         ConversationManager.Instance.EndConversation();
+        DialogueCanva.SetActive(false);
         StartCoroutine(SecondMinigameStart());
     }
     IEnumerator SecondMinigameStart() {
@@ -69,6 +71,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Second minigame started");
     }
     public void OnSecondMinigameEnd() {
+        DialogueCanva.SetActive(true);
         ConversationManager.Instance.StartConversation(Conversations[4]);
     }
 

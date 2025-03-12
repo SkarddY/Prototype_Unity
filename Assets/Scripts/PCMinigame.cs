@@ -1,73 +1,61 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 public class PCMinigame : MonoBehaviour
 {
-    private bool isFront, isBack, isLeftSide, isRightSide;
+    private bool isFront, isRotatingLeft, isRotatingRight;
     public SnapCable snapCable;
-    [SerializeField] GameObject pCObject, cableObject, buttonsPC, monitorObject;
+    public float rotationSpeed = 100f, activationRange = 10f;
+    [SerializeField] GameObject pCObject, cableObject, monitorObject;
+    [SerializeField] GameObject leftButton, rightButton;
     [SerializeField] TextMeshProUGUI instructionTwoTxt, instructionThreeTxt;
     void Start()
     {
         isFront = true;
-        isBack = false; isLeftSide = false; isRightSide = false;
+        AddEventTrigger(leftButton, EventTriggerType.PointerDown, () => isRotatingLeft = true);
+        AddEventTrigger(leftButton, EventTriggerType.PointerUp, () => isRotatingLeft = false);
+        AddEventTrigger(rightButton, EventTriggerType.PointerDown, () => isRotatingRight = true);
+        AddEventTrigger(rightButton, EventTriggerType.PointerUp, () => isRotatingRight = false);
     }
     void Update()
     {
         if (snapCable.isConnected == true && isFront == true) {
             snapCable.powerButton.SetActive(true);
         } else snapCable.powerButton.SetActive(false);
-    }
-    public void OnLeftButton() {
-        if (isFront == true) {
-            pCObject.transform.rotation = Quaternion.Euler(0,0,0);
-            isFront = false;
-            isRightSide = true;
-        } else if (isRightSide == true) {
-            pCObject.transform.rotation = Quaternion.Euler(0,-90,0);
-            isRightSide = false;
-            isBack = true;
-            if (snapCable.isConnected == false) {
-                cableObject.SetActive(true);
-            } else cableObject.SetActive(false);
-        } else if (isBack == true) {
-            pCObject.transform.rotation = Quaternion.Euler(0,-180,0);
-            isBack = false;
-            isLeftSide = true;
-        } else if (isLeftSide == true) {
-            pCObject.transform.rotation = Quaternion.Euler(0,90,0);
-            isLeftSide = false;
-            isFront = true;
-        } 
-    }
-
-    public void OnRightButton() {
-        if (isFront == true) {
-            pCObject.transform.rotation = Quaternion.Euler(0,180,0);
-            isFront = false;
-            isLeftSide = true;
-        } else if (isLeftSide == true) {
-            pCObject.transform.rotation = Quaternion.Euler(0,270,0);
-            isLeftSide = false;
-            isBack = true;
-            if (snapCable.isConnected == false) {
-                cableObject.SetActive(true);
-            } else cableObject.SetActive(false);
-        } else if (isBack == true) {
-            pCObject.transform.rotation = Quaternion.Euler(0,360,0);
-            isBack = false;
-            isRightSide = true;
-        } else if (isRightSide == true) {
-            pCObject.transform.rotation = Quaternion.Euler(0,90,0);
-            isRightSide = false;
-            isFront = true;
+         
+        if (isRotatingLeft) {
+            transform.Rotate(Vector3.up, -rotationSpeed * Time.deltaTime);
         }
+        if (isRotatingRight) {
+            transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+        }
+        CheckRotation();
+    }
+    void CheckRotation()
+    {
+        float yRotation = transform.eulerAngles.y;
+        if (Mathf.Abs(yRotation - 180f) <= activationRange || Mathf.Abs(yRotation - (-180f)) <= activationRange)
+        {
+            cableObject.SetActive(true);
+        } 
+        else cableObject.SetActive(false);
     }
 
+    void AddEventTrigger(GameObject obj, EventTriggerType type, UnityEngine.Events.UnityAction action)
+    {
+        EventTrigger trigger = obj.GetComponent<EventTrigger>();
+        if (trigger == null) {
+            trigger = obj.AddComponent<EventTrigger>();
+        }
+        EventTrigger.Entry entry = new EventTrigger.Entry { eventID = type };
+        entry.callback.AddListener((eventData) => action());
+        trigger.triggers.Add(entry);
+    }
     public void OnPowerButton() {
         if (snapCable.isConnected == true) {
             instructionTwoTxt.text = "<s> " + instructionTwoTxt.text + " </s>";
             Debug.Log("Encendiendo PC");
-            pCObject.SetActive(false); buttonsPC.SetActive(false); monitorObject.SetActive(true);
+            pCObject.SetActive(false); monitorObject.SetActive(true);
         } else return;
     }
 }

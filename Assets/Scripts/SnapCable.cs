@@ -37,7 +37,6 @@ public class SnapCable: MonoBehaviour
                     snappedCable[obj] = point;
                     instructionOneText.text = "<s> " + instructionOneText.text + " </s>";
                     isConnected = true;
-                    cable.SetActive(false);
                     powerButton.SetActive(true);
                     return;
                 }
