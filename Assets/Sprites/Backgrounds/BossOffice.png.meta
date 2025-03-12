@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 158447f010482394a9ac2ce18e9ae1e8
+guid: 14bc5f989e666ce43bf7df0ed238989f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4571099076732248647
-    second: EdgeConection_0
+      213: -2161781359387730135
+    second: BossOffice_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EdgeConection_0
+      name: BossOffice_0
       rect:
         serializedVersion: 2
-        x: 240
-        y: 110
-        width: 1440
-        height: 860
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 742edbd346ecf6f30800000000000000
-      internalID: 4571099076732248647
+      spriteID: 92f12a7ae4fcff1e0800000000000000
+      internalID: -2161781359387730135
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      EdgeConection_0: 4571099076732248647
+      BossOffice_0: -2161781359387730135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

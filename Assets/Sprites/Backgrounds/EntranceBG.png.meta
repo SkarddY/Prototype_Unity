@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 158447f010482394a9ac2ce18e9ae1e8
+guid: ad8fe9ebff7532e4fbd274974d30c2a5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4571099076732248647
-    second: EdgeConection_0
+      213: -7050408509674979875
+    second: EntranceBG_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EdgeConection_0
+      name: EntranceBG_0
       rect:
         serializedVersion: 2
-        x: 240
-        y: 110
-        width: 1440
-        height: 860
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 742edbd346ecf6f30800000000000000
-      internalID: 4571099076732248647
+      spriteID: ddd7e6ba0dae72e90800000000000000
+      internalID: -7050408509674979875
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      EdgeConection_0: 4571099076732248647
+      EntranceBG_0: -7050408509674979875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

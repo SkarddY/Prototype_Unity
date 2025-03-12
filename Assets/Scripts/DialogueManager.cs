@@ -15,9 +15,11 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TutorialEnd());
     }
     IEnumerator TutorialEnd() {
+        DialogueCanva.SetActive(false);
         yield return new WaitForSeconds(1.25f);
         Conversations[0].gameObject.SetActive(false);
         ConversationManager.Instance.StartConversation(Conversations[2]);
+        DialogueCanva.SetActive(true);
     }
 
     //PC RESTART MINIGAME SETTINGS
