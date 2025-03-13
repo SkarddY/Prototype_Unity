@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7cd631842cd135b46a4f00ec84a37725
+guid: e55a282cb5a84864595bd63aaccd4d2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6195879439702140038
-    second: pcBack_0
+      213: 7111175037530436147
+    second: Coffe_Character_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pcBack_0
+      name: Coffe_Character_1_0
       rect:
         serializedVersion: 2
-        x: 116
-        y: 49
-        width: 266
-        height: 420
+        x: 12
+        y: 2
+        width: 36
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7b586d0a70d30aa0800000000000000
-      internalID: -6195879439702140038
+      spriteID: 33270af1508ffa260800000000000000
+      internalID: 7111175037530436147
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Coffe_Character_1_0: 7111175037530436147
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

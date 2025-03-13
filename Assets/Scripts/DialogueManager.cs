@@ -7,7 +7,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject[] Minigames;
     [SerializeField] GameObject dialogueCanva, endGameCanva;
     
-    public void Awake() {
+    void Start() {
         ConversationManager.Instance.StartConversation(Conversations[0]);
     }
 

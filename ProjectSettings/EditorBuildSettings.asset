@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: dfd98d53a82ef924fa02114744c76c94
   - enabled: 1
-    path: Assets/Scenes/Simulacro_01.unity
+    path: Assets/Scenes/Simulacro.unity
     guid: 45ccd9c34f9cc774ea0ed737acd9b727
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

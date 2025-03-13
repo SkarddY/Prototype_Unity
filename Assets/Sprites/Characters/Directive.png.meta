@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f6816f80c8cec694d9f0350b973a53da
+guid: 1017a4c9828abb54eb60bb13add3bc9b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7981556030889695390
-    second: Simon-Kucher-2-2_0
+      213: -6087425768088945923
+    second: Directive_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Simon-Kucher-2-2_0
+      name: Directive_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 23
         y: 0
-        width: 1500
-        height: 1002
+        width: 398
+        height: 767
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e989e080cee24ce60800000000000000
-      internalID: 7981556030889695390
+      spriteID: dfabf78348e158ba0800000000000000
+      internalID: -6087425768088945923
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Simon-Kucher-2-2_0: 7981556030889695390
+      Directive_0: -6087425768088945923
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

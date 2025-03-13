@@ -1,5 +1,7 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI timerText, finalTimeText;
@@ -23,11 +25,18 @@ public class Timer : MonoBehaviour
         gameEnded = true;
         PlayerPrefs.SetFloat("FinalTime", elapsedTime);
         DisplayFinalTime();
+        StartCoroutine(EndGameRestart());
     }
     void DisplayFinalTime() {
         float finalTime = PlayerPrefs.GetFloat("FinalTime");
         int minutesElapsed = Mathf.FloorToInt(finalTime / 60);
         int secondsElapsed = Mathf.FloorToInt(finalTime % 60);
         finalTimeText.text = string.Format("TIEMPO: {0:00}:{1:00}", minutesElapsed, secondsElapsed);
+    }
+
+    IEnumerator EndGameRestart() {
+        yield return new WaitForSeconds(2.5f);
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene(0);
     }
 }
