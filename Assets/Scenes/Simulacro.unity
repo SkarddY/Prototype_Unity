@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Mesa ayuda Minigame]'
       objectReference: {fileID: 0}
+    - target: {fileID: 5286969181271370826, guid: d5985155a5c9697458aa950f0d7be80f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6328765498233716322, guid: d5985155a5c9697458aa950f0d7be80f, type: 3}
       propertyPath: m_Camera
       value: 
@@ -197,9 +201,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 853121119}
     m_Modifications:
+    - target: {fileID: 1361547738039706720, guid: 994f7e7f29793454297e42b9d174772c, type: 3}
+      propertyPath: m_Radius
+      value: 0.41703904
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361547738039706720, guid: 994f7e7f29793454297e42b9d174772c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.2318385
+      objectReference: {fileID: 0}
     - target: {fileID: 2128554148090302649, guid: 994f7e7f29793454297e42b9d174772c, type: 3}
       propertyPath: m_Name
       value: '[Co-worker Minigame]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2128554148090302649, guid: 994f7e7f29793454297e42b9d174772c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4838396033869529215, guid: 994f7e7f29793454297e42b9d174772c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1331,27 +1347,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 24
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":542.5,\"yPos\":238},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"PREGUNTAR
-    A TUS COMPA\xD1EROS\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":45.5,\"yPos\":235},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"ESCRIBIR
-    A LA MESA DE AYUDA\",\"parentUIDs\":[5],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":284.5,\"yPos\":-274},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Gracias
-    por tu ayuda con los papeles.\\\"\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"JEFE\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":285.5,\"yPos\":-176},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Ahora,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":661.5,\"yPos\":24},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"PREGUNTAR
+    A TUS COMPA\xD1EROS\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":164.5,\"yPos\":21},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"ESCRIBIR
+    A LA MESA DE AYUDA\",\"parentUIDs\":[5],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":403.5,\"yPos\":-488},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Gracias
+    por tu ayuda con los papeles.\\\"\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"JEFE\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":404.5,\"yPos\":-390},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Ahora,
     si te soy sincero conmigo esos temas no se consultan, debes pasar por los medios
-    adecuados para notificar tu problema.\\\"\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"JEFE\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":287.5,\"yPos\":-78},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"\xBFY
-    cuales ser\xEDan esos medios? La verdad no me acuerdo los pasos adecuados.\\\"\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":288.5,\"yPos\":19},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Lo
+    adecuados para notificar tu problema.\\\"\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"JEFE\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":406.5,\"yPos\":-292},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"\xBFY
+    cuales ser\xEDan esos medios? La verdad no me acuerdo los pasos adecuados.\\\"\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":407.5,\"yPos\":-195},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Lo
     siento, pero eso es algo que ustedes deber\xEDan saber como parte de la empresa,
-    as\xED que mejor ponte manos a la obra a encontrar una soluci\xF3n.\\\"\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"JEFE\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":290.5,\"yPos\":123},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Esta
-    bien... buscar\xE9 una soluci\xF3n pronto.\\\"\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":290.5,\"yPos\":219},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sales
-    de la oficina de tu jefe un poco desepcionado, pero sin perder tiempo tratas
-    de acordarte que pasos deber\xEDas seguir...\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":542.5,\"yPos\":326},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Decides
-    que la mejor idea es preguntar a tus compa\xF1eros de oficina por ayuda.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":542.5,\"yPos\":429},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Buscas
+    as\xED que mejor ponte manos a la obra a encontrar una soluci\xF3n.\\\"\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"JEFE\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":409.5,\"yPos\":-91},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Esta
+    bien... buscar\xE9 una soluci\xF3n pronto.\\\"\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":409.5,\"yPos\":5},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sales
+    de la oficina de tu jefe un poco decepcionado, pero sin perder tiempo tratas
+    de acordarte que pasos deber\xEDas seguir...\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":661.5,\"yPos\":112},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Decides
+    que la mejor idea es preguntar a tus compa\xF1eros de oficina por ayuda.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":661.5,\"yPos\":215},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Buscas
     por la oficina hasta que te encuentras con un compa\xF1ero al cual parece que
-    le puedes pedir ayuda con respecto a esto.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":543.5,\"yPos\":534},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hola
-    'Compa\xF1ero B', tengo una situaci\xF3n con mi equipo, es algo con respecto
-    al internet y no s\xE9 que deber\xEDa hacer con esto.\\\"\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":543.5,\"yPos\":633},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"\xA1Vaya
+    le puedes pedir ayuda con respecto a esto.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":662.5,\"yPos\":320},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hola
+    Juan, tengo una situaci\xF3n con mi equipo, es algo con respecto al internet
+    y no s\xE9 que deber\xEDa hacer con esto.\\\"\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":662.5,\"yPos\":419},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"\xA1Vaya
     problema!, pero antes de eso, \xBFMe podr\xEDas traer un cafecito? as\xED me
-    da tiempo de pensar que deber\xEDas hacer.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Compa\xF1ero
-    B\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":542.5,\"yPos\":734},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Est\xE1
-    bien, yo te hago el favor, pero espero que me puedas ayudar con mi problema\\\"\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":545.5,\"yPos\":844},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    da tiempo de pensar que deber\xEDas hacer.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Juan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":661.5,\"yPos\":520},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Est\xE1
+    bien, yo te hago el favor, pero espero que me puedas ayudar con mi problema\\\"\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":664.5,\"yPos\":630},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -1837,7 +1852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0, y: -450}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772947085
@@ -2302,6 +2317,142 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
+--- !u!1 &817651972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 817651973}
+  - component: {fileID: 817651975}
+  - component: {fileID: 817651974}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &817651973
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817651972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1771438799}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &817651974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817651972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Recuerda '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 45
+  m_fontSizeBase: 45
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &817651975
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817651972}
+  m_CullTransparentMesh: 1
 --- !u!1 &853121118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2495,7 +2646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: ScrollSpeed
-      value: 0.85
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Pivot.x
@@ -2854,17 +3005,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 35
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":154.5,\"yPos\":253},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"REPORTAR
-    EL PROBLEMA\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":494.5,\"yPos\":251},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"REVISAR
-    CABLES DEL COMPUTADOR\",\"parentUIDs\":[5],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":338.5,\"yPos\":-281},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Luego
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":249.5,\"yPos\":408},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"REPORTAR
+    EL PROBLEMA\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":589.5,\"yPos\":406},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"REVISAR
+    WIFI\",\"parentUIDs\":[5],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":433.5,\"yPos\":-126},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Luego
     de un buen fin de semana vuelves a tu trabajo de manera rutinaria, a empezar
-    un nuevo d\xEDa.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":340.5,\"yPos\":-157},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Deber\xEDa
-    revisar si me han enviado los documentos para comenzar con mi trabajo\\\"\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":338.5,\"yPos\":-25},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Procedes
+    un nuevo d\xEDa.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":435.5,\"yPos\":-2},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Deber\xEDa
+    revisar si me han enviado los documentos para comenzar con mi trabajo\\\"\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":433.5,\"yPos\":130},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Procedes
     a encender el computador e ingresar a tu correo, pero r\xE1pidamente te das cuenta
-    que este no est\xE1 respondiendo, no hay conexi\xF3n a la red.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":335.5,\"yPos\":103},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"No
+    que este no est\xE1 respondiendo, no hay conexi\xF3n a la red.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":430.5,\"yPos\":258},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"No
     puedo ingresar a mi correo... Parece que mi computador no tiene acceso a la red
-    de internet.\\\"\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":495.5,\"yPos\":334},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Apagas
-    el computador y procedes a revisar que todos los cables est\xE9n conectados correctamente...\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":155,\"yPos\":331},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    de internet.\\\"\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":590.5,\"yPos\":489},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Apagas
+    el computador y procedes a revisar que todo est\xE9 conectado correctamente...\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":250,\"yPos\":486},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -4141,32 +4292,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 18
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":242.5,\"yPos\":207},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFEst\xE1s
-    seguro que esa es la mejor idea?\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":704.5,\"yPos\":207},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tienes
-    raz\xF3n.\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":462.5,\"yPos\":533},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Creo
-    que mejor pregunto a los directivos\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":19.5,\"yPos\":529},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Voy
-    a intentar la mesa de ayuda entonces.\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":931.5,\"yPos\":931},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Comunicarse
-    con la mesa de ayuda.\",\"parentUIDs\":[16],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":471.5,\"yPos\":79},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Gracias
-    por el caf\xE9, ahora con respecto al problema que me comentaste.\\\"\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Compa\xF1ero
-    B\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":472.5,\"yPos\":190},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"\xBFHas
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":239.5,\"yPos\":212},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFEst\xE1s
+    seguro que esa es la mejor idea?\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":701.5,\"yPos\":212},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tienes
+    raz\xF3n.\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":459.5,\"yPos\":538},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Creo
+    que mejor pregunto a los directivos\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":16.5,\"yPos\":534},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Voy
+    a intentar la mesa de ayuda entonces.\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":928.5,\"yPos\":936},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Comunicarse
+    con la mesa de ayuda.\",\"parentUIDs\":[16],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":468.5,\"yPos\":84},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Gracias
+    por el caf\xE9, ahora con respecto al problema que me comentaste.\\\"\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Juan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":469.5,\"yPos\":195},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"\xBFHas
     intentado comunicarte con los directivos? Ellos son los encargados de todo, mejor
-    decirle a ellos sobre esto.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Compa\xF1ero
-    B\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":241.5,\"yPos\":294},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Ahora
+    decirle a ellos sobre esto.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Juan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":238.5,\"yPos\":299},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Ahora
     que lo dices no lo s\xE9, me suena que nos dijero algo sobre una mesa de ayuda
-    pero no estoy seguro que tan importante sea para esto.\\\"\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Compa\xF1ero
-    B\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":241.5,\"yPos\":407},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Tal
-    vez puedas comunicarte con ellos y mirar si ellos se pueden encargar de tu problema.\\\"\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Compa\xF1ero
-    B\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":241.5,\"yPos\":517},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Pero
-    m\xE1s all\xE1 de esto la verdad no s\xE9.\\\"\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Compa\xF1ero
-    B\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":705.5,\"yPos\":291},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Decides
-    llamar a los directivos a para preguntar sobre tu problema.\",\"parentUIDs\":[4,8],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":926.5,\"yPos\":293},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Marcas
-    el n\xFAmero de uno de ellos esperando respuesta.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":926.5,\"yPos\":396},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hola,
-    buenos d\xEDas, \xBFAlg\xFAn inconveniente?\\\"\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Directivo\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":928.5,\"yPos\":498},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Buenos
+    pero no estoy seguro que tan importante sea para esto.\\\"\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Juan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":238.5,\"yPos\":412},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Tal
+    vez puedas comunicarte con ellos y mirar si ellos se pueden encargar de tu problema.\\\"\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Juan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":238.5,\"yPos\":522},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Pero
+    m\xE1s all\xE1 de esto la verdad no s\xE9.\\\"\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Juan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":702.5,\"yPos\":296},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Decides
+    llamar a los directivos a para preguntar sobre tu problema.\",\"parentUIDs\":[4,8],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":923.5,\"yPos\":298},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Marcas
+    el n\xFAmero de uno de ellos esperando respuesta.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":923.5,\"yPos\":401},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hola,
+    buenos d\xEDas, \xBFAlg\xFAn inconveniente?\\\"\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Directivo\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":925.5,\"yPos\":503},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Buenos
     d\xEDas, s\xED, mira, me encuentro con un probrlema con respecto al interntet
-    y mi computador, no he podido empezar a trabajar por culpa de esto.\\\"\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":929.5,\"yPos\":602},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Se\xF1or,
+    y mi computador, no he podido empezar a trabajar por culpa de esto.\\\"\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":926.5,\"yPos\":607},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Se\xF1or,
     me gustar\xEDa recordarle que estos no son los canales de comunicaci\xF3n para
-    este tipo de problema, porfavor remitase al canal indicado de la mesa de ayuda.\\\"\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Directivo\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":929.5,\"yPos\":708},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Ah
-    s\xED, lo siento, no volver\xE1 a ocurrir.\\\"\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":931.5,\"yPos\":815},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Avergonzado
+    este tipo de problema, porfavor remitase al canal indicado de la mesa de ayuda.\\\"\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Directivo\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":926.5,\"yPos\":713},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Ah
+    s\xED, lo siento, no volver\xE1 a ocurrir.\\\"\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":928.5,\"yPos\":820},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Avergonzado
     cuelgas el tel\xE9fono, tomas un minuto para recuperarte y procedes ahora con
     la cabeza m\xE1s clara a usar el canal que te indicaron los directivos para reportar
     tu problema.\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
@@ -4287,7 +4433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1771438799
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4302,6 +4448,7 @@ RectTransform:
   m_Children:
   - {fileID: 1768499682}
   - {fileID: 1907004208}
+  - {fileID: 817651973}
   - {fileID: 772947084}
   m_Father: {fileID: 768907615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4621,7 +4768,7 @@ GameObject:
   - component: {fileID: 1907004210}
   - component: {fileID: 1907004209}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4641,9 +4788,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1771438799}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 350}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1907004209
@@ -4693,8 +4840,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4791,20 +4938,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 9
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":394.5,\"yPos\":-228},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Decides
-    reportar tu problema a la mesa de ayuda.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":391.5,\"yPos\":-113},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Para
-    esto tomas tu tel\xE9fono y buscas a uno de los integrantes de esta para escribirle.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":388.5,\"yPos\":-5},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hola,
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":437.5,\"yPos\":-356},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Decides
+    reportar tu problema a la mesa de ayuda.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":434.5,\"yPos\":-241},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Para
+    esto tomas tu tel\xE9fono y buscas a uno de los integrantes de esta para escribirle.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":431.5,\"yPos\":-133},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hola,
     buenos d\xEDas, estoy teniendo unos problemas con la conexi\xF3n a mi dispositivo
-    y me gustar\xEDa reportarlo para que tengan en cuenta esta falla.\\\"\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":388.5,\"yPos\":104},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Ah,
+    y me gustar\xEDa reportarlo para que tengan en cuenta esta falla.\\\"\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":431.5,\"yPos\":-24},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Ah,
     s\xED, no eres el primero que nos reporta este inconveniente, te pedimos que
     por favor mantengas la calma y nosotros nos encargaremos de esto.\\\"\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"MESA
-    DE AYUDA\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":388.5,\"yPos\":213},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Por
+    DE AYUDA\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":431.5,\"yPos\":86},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Por
     ahora no uses el computador y mantenlo apagado para evitar m\xE1s problemas.\\\"\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"MESA
-    DE AYUDA\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":388.5,\"yPos\":328},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Entendido,
-    har\xE9 lo indicado, muchas gracias por la ayuda.\\\"\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":389.5,\"yPos\":442},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cuelgas
+    DE AYUDA\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":431.5,\"yPos\":200},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Entendido,
+    har\xE9 lo indicado, muchas gracias por la ayuda.\\\"\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":432.5,\"yPos\":314},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cuelgas
     la llamada y al instante te sientas m\xE1s tranquilo sabiendo que hiciste lo
-    correcto al reportar el problema.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":386.5,\"yPos\":551},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ahora
-    solo queda esperar a una soluci\xF3n oficial por parte de la mesa de ayuda.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":388,\"yPos\":681},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    correcto al reportar el problema.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":429.5,\"yPos\":423},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ahora
+    solo queda esperar a una soluci\xF3n oficial por parte de la mesa de ayuda.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":431,\"yPos\":553},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -4870,29 +5017,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 81
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":152.5,\"yPos\":391},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"MESA
-    DE AYUDA\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":397.5,\"yPos\":392},\"ID\":3,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionOne\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionTwo\",\"Value\":true},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionThree\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"JEFE\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":638.5,\"yPos\":392},\"ID\":4,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionOne\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionTwo\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionThree\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"PREGUNTAR
-    A COMPA\xD1EROS\",\"parentUIDs\":[1],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"isOptionOne\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"isOptionTwo\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"isOptionThree\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"PLACEHOLDER\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":398.5,\"yPos\":118},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Al
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":157.5,\"yPos\":-49},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"MESA
+    DE AYUDA\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":402.5,\"yPos\":-48},\"ID\":3,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionOne\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionTwo\",\"Value\":true},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionThree\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"JEFE\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":643.5,\"yPos\":-48},\"ID\":4,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionOne\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionTwo\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isOptionThree\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"PREGUNTAR
+    A COMPA\xD1EROS\",\"parentUIDs\":[1],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"isOptionOne\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"isOptionTwo\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"isOptionThree\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"PLACEHOLDER\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":403.5,\"yPos\":-322},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Al
     ver la situaci\xF3n decides reportar el problema de conexi\xF3n a la red, pero
-    no est\xE1s seguro a qui\xE9n deber\xEDas hablarle.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":398.5,\"yPos\":263},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hmm....
-    \xBFA qui\xE9n deber\xEDa reportarle este problema?\\\"\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":395.5,\"yPos\":495},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Decides
-    ir a reportarle el problema directamente a tu jefe.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":395.5,\"yPos\":614},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Llegas
-    a su oficina, tocas la puerta y procedes a entrar cuando este te da el permiso\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":74}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":396.5,\"yPos\":732},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hola
+    no est\xE1s seguro a qui\xE9n deber\xEDas hablarle.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":403.5,\"yPos\":-177},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hmm....
+    \xBFA qui\xE9n deber\xEDa reportarle este problema?\\\"\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":400.5,\"yPos\":55},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Decides
+    ir a reportarle el problema directamente a tu jefe.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":401.5,\"yPos\":173},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Llegas
+    a su oficina, tocas la puerta y procedes a entrar cuando este te da el permiso\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":74}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":401.5,\"yPos\":292},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hola
     Jefe, buenos d\xEDas, te comento, he estado teniendo problemas con mi dispositivo
-    , al perecer es algo con respecto a la conexi\xF3n de internet.\\\"\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":641,\"yPos\":495},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Decides
+    , al perecer es algo con respecto a la conexi\xF3n de internet.\\\"\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":646,\"yPos\":55},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Decides
     que la mejor opci\xF3n es preguntarle a uno de tus compa\xF1eros de trabajo que
-    deber\xEDas hacer.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":641,\"yPos\":611},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Buscas
+    deber\xEDas hacer.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":646,\"yPos\":171},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Buscas
     por la oficina hasta que te encuentras con un compa\xF1ero al cual parece que
-    le puedes pedir ayuda con respecto a esto.\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":642,\"yPos\":733},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hola
-    'Compa\xF1ero B', tengo una situaci\xF3n con mi equipo, es algo con respecto
-    al internet y no s\xE9 que deber\xEDa hacer con esto.\\\"\",\"parentUIDs\":[52],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":642,\"yPos\":851},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Que
+    le puedes pedir ayuda con respecto a esto.\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":647,\"yPos\":293},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Hola
+    Juan, tengo una situaci\xF3n con mi equipo, es algo con respecto al internet
+    y no s\xE9 que deber\xEDa hacer con esto.\\\"\",\"parentUIDs\":[52],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":647,\"yPos\":411},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Que
     problema, pero antes de eso, \xBFMe podr\xEDas traer un cafecito? El que me estaba
-    tomando se acab\xF3 y me vendr\xEDa bien otro.\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"COMPA\xD1ERO
-    B\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":80}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":642,\"yPos\":968},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Est\xE1
-    bien, yo te hago el favor, pero espero que me puedas ayudar con mi problema\\\"\",\"parentUIDs\":[54],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":75}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":399.5,\"yPos\":853},\"ID\":74,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Ya
-    veo, entiendo, pero antes de eso, venga colaboreme con estos documentos primero\\\"\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Jefe\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":76}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":399.5,\"yPos\":970},\"ID\":75,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Estoy
-    lleno de papeles, me vendr\xEDa bien si me ayuda a organizarlos de manera correspondiente.\\\"\",\"parentUIDs\":[74],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Jefe\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"PLACEHOLDER\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":78}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":399.5,\"yPos\":1091},\"ID\":76,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Listo,
-    sin ning\xFAn problema\\\"\",\"parentUIDs\":[75],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":399.5,\"yPos\":1217},\"ID\":78,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[76],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":644.5,\"yPos\":1091},\"ID\":80,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    tomando se acab\xF3 y me vendr\xEDa bien otro.\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Juan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":80}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":647,\"yPos\":528},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Est\xE1
+    bien, yo te hago el favor, pero espero que me puedas ayudar con mi problema\\\"\",\"parentUIDs\":[54],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":75}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":404.5,\"yPos\":413},\"ID\":74,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Ya
+    veo, entiendo, pero antes de eso, venga colaboreme con estos documentos primero\\\"\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Jefe\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":76}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":404.5,\"yPos\":530},\"ID\":75,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Estoy
+    lleno de papeles, me vendr\xEDa bien si me ayuda a organizarlos de manera correspondiente.\\\"\",\"parentUIDs\":[74],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Jefe\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"PLACEHOLDER\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":78}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":404.5,\"yPos\":651},\"ID\":76,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Est\xE1
+    bien, ya te ayudo con eso.\\\"\",\"parentUIDs\":[75],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.05,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":405.5,\"yPos\":780},\"ID\":78,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[76],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":649.5,\"yPos\":651},\"ID\":80,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -4920,7 +5066,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1507695534}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: OnSecondMinigameStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &2032924590
 GameObject:
   m_ObjectHideFlags: 0
@@ -5334,19 +5492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1507695534}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: OnFirstMinigameStart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   NodeID: 76
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: adad729b8d7adec4a8e7b08fdbc00acd, type: 3}
@@ -5384,7 +5530,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1507695534}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: OnFirstMinigameStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 78
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
