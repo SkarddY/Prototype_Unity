@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MazeControles_0: 5654732154533119978
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
