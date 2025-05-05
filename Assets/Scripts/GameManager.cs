@@ -23,4 +23,21 @@ public class GameManager : MonoBehaviour
     public void OnMenuReturn(){
         SceneManager.LoadScene(0);
     }
+
+    public void OnReporteLoad() {
+        SceneManager.LoadScene("Nivel 0");
+    }
+    public void OnLvl1Load() {
+        SceneManager.LoadScene("Nivel 1");
+    }
+    public void OnLvl2Load() {
+        SceneManager.LoadScene("Nivel 2");
+    }
+    public void OnLvl3Load() {
+        SceneManager.LoadScene("Nivel 3");
+    }
+    public void OnLvl4Load() {
+        SceneManager.LoadScene("Nivel 4");
+    }
+    
 }

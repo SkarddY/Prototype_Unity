@@ -25,7 +25,6 @@ public class Timer : MonoBehaviour
         gameEnded = true;
         PlayerPrefs.SetFloat("FinalTime", elapsedTime);
         DisplayFinalTime();
-        StartCoroutine(EndGameRestart());
     }
     void DisplayFinalTime() {
         float finalTime = PlayerPrefs.GetFloat("FinalTime");
@@ -33,9 +32,7 @@ public class Timer : MonoBehaviour
         int secondsElapsed = Mathf.FloorToInt(finalTime % 60);
         finalTimeText.text = string.Format("TIEMPO: {0:00}:{1:00}", minutesElapsed, secondsElapsed);
     }
-
-    IEnumerator EndGameRestart() {
-        yield return new WaitForSeconds(2.5f);
+    public void OnEndGameButton() {
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(0);
     }
