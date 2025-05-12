@@ -12,6 +12,8 @@ TagManager:
   - MazeEnd
   - MazeWorker
   - CableE
+  - PosSnap
+  - Phrase
   layers:
   - Default
   - TransparentFX

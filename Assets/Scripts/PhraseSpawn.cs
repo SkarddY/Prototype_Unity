@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -5,6 +6,8 @@ public class PhraseSpawn : MonoBehaviour
 {
     [SerializeField] GameObject[] phrasesText;
     [SerializeField] Transform[] phraseSpawns;
+
+    private Dictionary<GameObject, Vector3> spawnPositions = new Dictionary<GameObject, Vector3>(); 
 
     void Start()
     {
@@ -24,6 +27,8 @@ public class PhraseSpawn : MonoBehaviour
         for (int i = 0; i < phrasesText.Length; i++) {
             phrasesText[i].transform.position = phraseSpawns[indices[i]].position;
             phrasesText[i].transform.rotation = phraseSpawns[indices[i]].rotation;
+            
+            spawnPositions[phrasesText[i]] = phraseSpawns[indices[i]].position;
         }
     }
 
@@ -34,6 +39,12 @@ public class PhraseSpawn : MonoBehaviour
             int temp = array[i];
             array[i] = array[randomIndex];
             array[randomIndex] = temp;
+        }
+    }
+
+    public void ResetPhrasePosition(GameObject phrase) {
+        if (spawnPositions.ContainsKey(phrase)) { 
+            phrase.transform.position = spawnPositions[phrase];
         }
     }
 }
