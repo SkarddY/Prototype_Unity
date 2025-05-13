@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class MazeMovement : MonoBehaviour
 {
@@ -51,5 +52,6 @@ public class MazeMovement : MonoBehaviour
     }
     public void GameEnd(){
         Debug.Log("Maze completed!");
+        SceneManager.LoadScene("Nivel 1");
     }
 }

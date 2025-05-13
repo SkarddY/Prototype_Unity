@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SnapScript: MonoBehaviour
@@ -68,5 +69,9 @@ public class SnapScript: MonoBehaviour
             }
         }
         finishButton.gameObject.SetActive(true);
+    }
+
+    public void ReloadScene() {
+        SceneManager.LoadScene("Nivel 0");
     }
 }
