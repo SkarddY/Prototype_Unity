@@ -39,5 +39,8 @@ public class GameManager : MonoBehaviour
     public void OnLvl4Load() {
         SceneManager.LoadScene("Nivel 4");
     }
-    
+    public void OnExitButton() {
+        Debug.Log("Closing App");
+        Application.Quit();
+    }
 }
