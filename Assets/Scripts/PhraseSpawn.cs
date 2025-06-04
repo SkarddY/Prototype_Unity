@@ -21,7 +21,7 @@ public class PhraseSpawn : MonoBehaviour
 
     void SpawnPhrases()
     {
-        int[] indices = { 0, 1, 2 };
+        int[] indices = { 0, 1, 2, 3, 4 };
         Shuffle(indices);
 
         for (int i = 0; i < phrasesText.Length; i++) {

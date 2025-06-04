@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selecciona tu cargo correspondiente
+  m_text: "Selecciona la opci\xF3n seg\xFAn tu rol"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0c3f851e9b8f1ef418fce80fd850e348, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 0c3f851e9b8f1ef418fce80fd850e348, type: 2}
