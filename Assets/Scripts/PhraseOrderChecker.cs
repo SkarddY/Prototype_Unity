@@ -1,7 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PhraseOrderChecker : MonoBehaviour
@@ -36,11 +38,18 @@ public class PhraseOrderChecker : MonoBehaviour
         if (isCorrect) {
             resultMessage.text = "El orden está correcto";
             resultMessage.color = Color.green;
+            StartCoroutine(CorrectOrder());
         } else {
             resultMessage.text = "El orden es incorrecto, intenta de nuevo";
             resultMessage.color = Color.red;
             ResetPosition();
         }
+    }
+
+    IEnumerator CorrectOrder() {
+        Debug.Log("Correct order");
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene(0);
     }
 
     private void ResetPosition() {

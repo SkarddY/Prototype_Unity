@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -51,7 +52,12 @@ public class MazeMovement : MonoBehaviour
         Debug.Log($"Is Picked {isCoffeePicked}, and setting {mazeEnding} on {onPickObject}");
     }
     public void GameEnd(){
+        StartCoroutine(EndMaze());
+    }
+
+    private IEnumerator EndMaze() {
         Debug.Log("Maze completed!");
-        SceneManager.LoadScene("Nivel 1");
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 47479a48d82b01d41b1ec291a51d2e8a
+guid: 579d86413b6a3c74893777e8e98b6db5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5146150192177089461
-    second: OptionsBox_0
+      213: 2870189193319151339
+    second: FolderTech_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OptionsBox_0
+      name: FolderTech_0
       rect:
         serializedVersion: 2
-        x: 141
-        y: 173
-        width: 1622
-        height: 718
+        x: 38
+        y: 63
+        width: 381
+        height: 476
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b44f97a6aa33598b0800000000000000
-      internalID: -5146150192177089461
+      spriteID: be6f3f94dd5f4d720800000000000000
+      internalID: 2870189193319151339
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      OptionsBox_0: -5146150192177089461
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -71,7 +71,7 @@ public class SnapScript: MonoBehaviour
         finishButton.gameObject.SetActive(true);
     }
 
-    public void ReloadScene() {
-        SceneManager.LoadScene("Nivel 0");
+    public void EndMinigame() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

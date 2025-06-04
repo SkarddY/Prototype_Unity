@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 234e22848de031e45be8f43aa2931381
+guid: 2ba5548cab820a747b2f6ce2c4ede2a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5797214068957558267
-    second: Economy_0
-  - first:
-      213: 1589019102402067081
-    second: Economy_1
+      213: -95481355276953297
+    second: FolderEconomy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,35 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Economy_0
+      name: FolderEconomy_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 265
-        width: 472
-        height: 195
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf5bc131b77d37050800000000000000
-      internalID: 5797214068957558267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Economy_1
-      rect:
-        serializedVersion: 2
-        x: 20
+        x: 38
         y: 63
-        width: 472
-        height: 280
+        width: 381
+        height: 476
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98a3cf364745d0610800000000000000
-      internalID: 1589019102402067081
+      spriteID: f295b089638ccaef0800000000000000
+      internalID: -95481355276953297
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -172,9 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Economy_0: 5797214068957558267
-      Economy_1: 1589019102402067081
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

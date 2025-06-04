@@ -348,7 +348,7 @@ RectTransform:
   m_GameObject: {fileID: 2850515270966652619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8683949695908602678}
@@ -396,7 +396,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 3.81, y: 4.76}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -456,8 +456,8 @@ SpriteRenderer:
   m_SortingLayerID: 2070321615
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: eb2d059dcf151ac4aa5ce3b761497506, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 4943015735109536596, guid: b5a77d74320e11c4eb7eed77a376d417, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9607843}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -795,21 +795,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2671464152069667441}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: OnFirstMinigameEnd
+      - m_Target: {fileID: 1101991897127904862}
+        m_TargetAssemblyTypeName: SnapScript, Assembly-CSharp
+        m_MethodName: EndMinigame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -847,7 +835,7 @@ RectTransform:
   m_GameObject: {fileID: 3557291419632439576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8683949695908602678}
@@ -895,7 +883,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 3.81, y: 4.76}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -955,8 +943,8 @@ SpriteRenderer:
   m_SortingLayerID: 2070321615
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 234e22848de031e45be8f43aa2931381, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -95481355276953297, guid: 2ba5548cab820a747b2f6ce2c4ede2a2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9607843}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1694,7 +1682,7 @@ RectTransform:
   m_GameObject: {fileID: 5871775446161392226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8683949695908602678}
@@ -1742,7 +1730,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 3.81, y: 4.76}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1802,8 +1790,8 @@ SpriteRenderer:
   m_SortingLayerID: 2070321615
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 506e91ff2a550a5498e5de00c41dc5d0, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 2870189193319151339, guid: 579d86413b6a3c74893777e8e98b6db5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9607843}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2615,7 +2603,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1080, y: 720}
+  m_SizeDelta: {x: 1792, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5535443361249603583
 CanvasRenderer:
@@ -2645,7 +2633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7872722273471896646, guid: e32d80f6d442a0e48828d59a1d052951, type: 3}
+  m_Sprite: {fileID: -5938509520714570855, guid: 7c4ac3cfe0bb81d409a127cea1661d69, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

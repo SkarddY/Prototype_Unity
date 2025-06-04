@@ -16,14 +16,6 @@ public class GameManager : MonoBehaviour
         errorPanel.SetActive(false);
     }
 
-    public void OnStartGame(){
-        SceneManager.LoadScene(1);
-    }
-
-    public void OnMenuReturn(){
-        SceneManager.LoadScene(0);
-    }
-
     public void OnReporteLoad() {
         SceneManager.LoadScene("Nivel 0");
     }
@@ -35,9 +27,6 @@ public class GameManager : MonoBehaviour
     }
     public void OnLvl3Load() {
         SceneManager.LoadScene("Nivel 3");
-    }
-    public void OnLvl4Load() {
-        SceneManager.LoadScene("Nivel 4");
     }
     public void OnExitButton() {
         Debug.Log("Closing App");
