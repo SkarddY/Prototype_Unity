@@ -14,6 +14,11 @@ TagManager:
   - CableE
   - PosSnap
   - Phrase
+  - Order01
+  - Order02
+  - Order03
+  - Order04
+  - Order05
   layers:
   - Default
   - TransparentFX

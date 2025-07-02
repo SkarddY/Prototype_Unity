@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -13,12 +14,16 @@ public class PhraseOrderChecker : MonoBehaviour
     public Button confirmButton;
     public TextMeshProUGUI resultMessage;
     public PhraseSpawn phraseSpawn;
+    [SerializeField] UnityEvent correctEndEvent;
 
 
     private List<GameObject> draggablePhrases = new List<GameObject>();
     private List<GameObject> correctPositions = new List<GameObject>();
 
     void Start() {
+        if (correctEndEvent == null) correctEndEvent = new UnityEvent();
+        correctEndEvent.AddListener(OnEventTriggered);
+
         resultMessage.text = "";
         draggablePhrases = GameObject.FindGameObjectsWithTag(phraseTag).OrderBy(obj => obj.name).ToList();
         correctPositions = GameObject.FindGameObjectsWithTag(positionTag).OrderBy(obj => obj.name).ToList();
@@ -29,31 +34,42 @@ public class PhraseOrderChecker : MonoBehaviour
     private void CheckOrder() {
         bool isCorrect = true;
 
-        for (int i = 0; i < draggablePhrases.Count; i++) {
-            if (Vector3.Distance(draggablePhrases[i].transform.position, correctPositions[i].transform.position) > 0.1f) { 
-                isCorrect = false; 
-                break;
+        foreach (GameObject phrase in draggablePhrases) { 
+            Transform snappedTo = phrase.transform;
+            string phraseID = phrase.name.Replace("Phrase", "");
+
+            GameObject slot = correctPositions.FirstOrDefault(pos =>
+                        Vector3.Distance(phrase.transform.position, pos.transform.position) < 0.1f
+                        );
+            if (slot == null || !slot.name.Contains(phraseID)) { 
+                isCorrect = false; break;
             }
         }
-        if (isCorrect) {
+
+        if (isCorrect)
+        {
             resultMessage.text = "El orden está correcto";
             resultMessage.color = Color.green;
-            StartCoroutine(CorrectOrder());
-        } else {
-            resultMessage.text = "El orden es incorrecto, intenta de nuevo";
+            correctEndEvent.Invoke();
+        }
+        else {
+            resultMessage.text = "El orden está incorrecto";
             resultMessage.color = Color.red;
             ResetPosition();
         }
     }
 
-    IEnumerator CorrectOrder() {
-        Debug.Log("Correct order");
-        yield return new WaitForSeconds(2.5f);
+    private void OnEventTriggered() {
+        Debug.Log("Evento de orden correcto");
+    }
+
+    void ResetGame() {
         SceneManager.LoadScene(0);
     }
 
     private void ResetPosition() {
         if (phraseSpawn == null) return;
+        DragPhrases.ClearOccupiedPositions();
 
         foreach (var phrase in draggablePhrases) {
             phraseSpawn.ResetPhrasePosition(phrase);

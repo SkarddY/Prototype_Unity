@@ -72,4 +72,8 @@ public class DragPhrases : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             if (phraseSpawn != null) phraseSpawn.ResetPhrasePosition(gameObject);
         }
     }
+
+    public static void ClearOccupiedPositions() {
+        occupiedPositions.Clear();
+    }
 }

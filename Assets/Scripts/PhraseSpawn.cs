@@ -1,50 +1,51 @@
 using System.Collections.Generic;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
 public class PhraseSpawn : MonoBehaviour
 {
-    [SerializeField] GameObject[] phrasesText;
-    [SerializeField] Transform[] phraseSpawns;
+    [SerializeField] private GameObject[] phrasesText;
+    [SerializeField] private Transform[] phraseSpawns;
 
-    private Dictionary<GameObject, Vector3> spawnPositions = new Dictionary<GameObject, Vector3>(); 
+    private Dictionary<GameObject, Vector3> spawnPositions = new Dictionary<GameObject, Vector3>();
+    private List<Transform> availableSpawns = new();
 
-    void Start()
+    private IEnumerator Start()
     {
-        if (phrasesText.Length > 0 && phraseSpawns.Length > 0) {
-            SpawnPhrases();
-        }
-        else {
+        if (phrasesText.Length > phraseSpawns.Length) {
             Debug.LogWarning("There are no spawn points or phrases assigned");
+            yield break;
         }
+
+        yield return null;
+
+        availableSpawns = new List<Transform>(phraseSpawns);
+        AssignSpawnPointsRandomly();
     }
 
-    void SpawnPhrases()
-    {
-        int[] indices = { 0, 1, 2, 3, 4 };
-        Shuffle(indices);
+    private void AssignSpawnPointsRandomly() {
+        foreach (GameObject phrase in phrasesText) {
+            int randomIndex = Random.Range(0, availableSpawns.Count);
+            Transform chosenSpawn = availableSpawns[randomIndex];
 
-        for (int i = 0; i < phrasesText.Length; i++) {
-            phrasesText[i].transform.position = phraseSpawns[indices[i]].position;
-            phrasesText[i].transform.rotation = phraseSpawns[indices[i]].rotation;
-            
-            spawnPositions[phrasesText[i]] = phraseSpawns[indices[i]].position;
-        }
-    }
+            phrase.transform.position = chosenSpawn.position;
+            phrase.transform.rotation = chosenSpawn.rotation;
 
-    void Shuffle(int[] array)
-    {
-        for (int i = array.Length - 1; i > 0; i--) {
-            int randomIndex = Random.Range(0, i + 1);
-            int temp = array[i];
-            array[i] = array[randomIndex];
-            array[randomIndex] = temp;
+            spawnPositions[phrase] = chosenSpawn.position;
+            availableSpawns.RemoveAt(randomIndex);
+
+            Debug.Log($"Assigned '{phrase.name}' to '{chosenSpawn.name}'");
         }
     }
 
     public void ResetPhrasePosition(GameObject phrase) {
-        if (spawnPositions.ContainsKey(phrase)) { 
-            phrase.transform.position = spawnPositions[phrase];
+        if (spawnPositions.TryGetValue(phrase, out Vector3 originalPosition))
+        {
+            phrase.transform.position = originalPosition;
+        }
+        else {
+            Debug.LogWarning($"Phrase '{phrase.name}' has no assigned spawn position.");
         }
     }
 }
