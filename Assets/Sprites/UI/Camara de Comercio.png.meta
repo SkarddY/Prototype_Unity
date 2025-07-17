@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: f196bf2d30d0e794885da9ea6ec37916
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3815258476326283335
+    second: Camara de Comercio_0
+  - first:
+      213: -227997286546012875
+    second: Camara de Comercio_1
+  - first:
+      213: -5593773342742316800
+    second: Camara de Comercio_2
+  - first:
+      213: -6485200122743645496
+    second: Camara de Comercio_3
+  - first:
+      213: -8863755837240835932
+    second: Camara de Comercio_4
+  - first:
+      213: 3555289868393605942
+    second: Camara de Comercio_5
+  - first:
+      213: -6937530897222757999
+    second: Camara de Comercio_6
+  - first:
+      213: -7376240804243376043
+    second: Camara de Comercio_7
+  - first:
+      213: 1132217772516881707
+    second: Camara de Comercio_8
+  - first:
+      213: 5373177822508817722
+    second: Camara de Comercio_9
+  - first:
+      213: -8643953878525882400
+    second: Camara de Comercio_10
+  - first:
+      213: -7909772339979208555
+    second: Camara de Comercio_11
+  - first:
+      213: -3094625999855710619
+    second: Camara de Comercio_12
+  - first:
+      213: -5196660009875640392
+    second: Camara de Comercio_13
+  - first:
+      213: 7353524745543093418
+    second: Camara de Comercio_14
+  - first:
+      213: 7323389879015303110
+    second: Camara de Comercio_15
+  - first:
+      213: -2133703523704294703
+    second: Camara de Comercio_16
+  - first:
+      213: -8427813933950205929
+    second: Camara de Comercio_17
+  - first:
+      213: -3192933527152289377
+    second: Camara de Comercio_18
+  - first:
+      213: 1343081866710892180
+    second: Camara de Comercio_19
+  - first:
+      213: 5291637166136905035
+    second: Camara de Comercio_20
+  - first:
+      213: -101140566693409152
+    second: Camara de Comercio_21
+  - first:
+      213: -437205780473821023
+    second: Camara de Comercio_22
+  - first:
+      213: 5878710433150959191
+    second: Camara de Comercio_23
+  - first:
+      213: -5903695464781165969
+    second: Camara de Comercio_24
+  - first:
+      213: -9097076284539677826
+    second: Camara de Comercio_25
+  - first:
+      213: -894146635155306189
+    second: Camara de Comercio_26
+  - first:
+      213: -20529624698684796
+    second: Camara de Comercio_27
+  - first:
+      213: 4843697015787865985
+    second: Camara de Comercio_28
+  - first:
+      213: -4192439662377620536
+    second: Camara de Comercio_29
+  - first:
+      213: 7949003134591129375
+    second: Camara de Comercio_30
+  - first:
+      213: -133045572385541993
+    second: Camara de Comercio_31
+  - first:
+      213: -4397002501124664042
+    second: Camara de Comercio_32
+  - first:
+      213: -1235517416900167208
+    second: Camara de Comercio_33
+  - first:
+      213: -8462793062681945128
+    second: Camara de Comercio_34
+  - first:
+      213: 8264998897257239442
+    second: Camara de Comercio_35
+  - first:
+      213: -8606975224688981959
+    second: Camara de Comercio_36
+  - first:
+      213: -1966937660952675617
+    second: Camara de Comercio_37
+  - first:
+      213: 8053479969049324185
+    second: Camara de Comercio_38
+  - first:
+      213: -4745438183862589497
+    second: Camara de Comercio_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Camara de Comercio_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 120
+        width: 82
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748e9bfbe5582f430800000000000000
+      internalID: 3815258476326283335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 138
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5350ca50dadf5dcf0800000000000000
+      internalID: -227997286546012875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 138
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0097bc728ccee52b0800000000000000
+      internalID: -5593773342742316800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 94
+        width: 107
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca9b8239d0fff5a0800000000000000
+      internalID: -6485200122743645496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 94
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a00779370d9df480800000000000000
+      internalID: -8863755837240835932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 94
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b652f6c4de65130800000000000000
+      internalID: 3555289868393605942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_6
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 94
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1919db4d760f8bf90800000000000000
+      internalID: -6937530897222757999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_7
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 94
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 558f45dc11452a990800000000000000
+      internalID: -7376240804243376043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_8
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 94
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b25b04bb01276bf00800000000000000
+      internalID: 1132217772516881707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_9
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 94
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d15a1e2cc519a40800000000000000
+      internalID: 5373177822508817722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_10
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 94
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efca9fbeb18a0880800000000000000
+      internalID: -8643953878525882400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 94
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598345de6f7da3290800000000000000
+      internalID: -7909772339979208555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_12
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 94
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e89e59c0ead05d0800000000000000
+      internalID: -3094625999855710619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_13
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 94
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf62ec0141c1e7b0800000000000000
+      internalID: -5196660009875640392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_14
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 104
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac0421abc7fc0660800000000000000
+      internalID: 7353524745543093418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_15
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 75
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7e5624b48e1a560800000000000000
+      internalID: 7323389879015303110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_16
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 75
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d23b9533ff8362e0800000000000000
+      internalID: -2133703523704294703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_17
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 75
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7108fc921e36a0b80800000000000000
+      internalID: -8427813933950205929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_18
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 75
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9917aabfdb60b3d0800000000000000
+      internalID: -3192933527152289377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_19
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 75
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e329187d593a210800000000000000
+      internalID: 1343081866710892180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_20
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 75
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d48df57fbaf6940800000000000000
+      internalID: 5291637166136905035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_21
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 75
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e8bd1c03da89ef0800000000000000
+      internalID: -101140566693409152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_22
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 75
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a84c19b8abbee9f0800000000000000
+      internalID: -437205780473821023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e78510eff559150800000000000000
+      internalID: 5878710433150959191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_24
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 75
+        width: 50
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a42aff04cd11ea0800000000000000
+      internalID: -5903695464781165969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_25
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 75
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73d16d4151b0c180800000000000000
+      internalID: -9097076284539677826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_26
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 75
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339057a6f5a5793f0800000000000000
+      internalID: -894146635155306189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_27
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 74
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a76744a6017bff0800000000000000
+      internalID: -20529624698684796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_28
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 75
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187c7a9d5c4483340800000000000000
+      internalID: 4843697015787865985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_29
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 75
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb29bde65671d5c0800000000000000
+      internalID: -4192439662377620536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_30
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 42
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1755cb3c38805e60800000000000000
+      internalID: 7949003134591129375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_31
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 48
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790750fb1c3572ef0800000000000000
+      internalID: -133045572385541993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_32
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 41
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615d5f38585baf2c0800000000000000
+      internalID: -4397002501124664042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_33
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 40
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d97bd3947f8adee0800000000000000
+      internalID: -1235517416900167208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_34
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 39
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dbd33b1c8e1e8a80800000000000000
+      internalID: -8462793062681945128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_35
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 38
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293530c05bc23b270800000000000000
+      internalID: 8264998897257239442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_36
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 38
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93843d582a1ed8880800000000000000
+      internalID: -8606975224688981959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_37
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 48
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdaf39f5e9804b4e0800000000000000
+      internalID: -1966937660952675617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_38
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 30
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99aa8e8dc55b3cf60800000000000000
+      internalID: 8053479969049324185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara de Comercio_39
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 37
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7ab4b3d11d42eb0800000000000000
+      internalID: -4745438183862589497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Camara de Comercio_0: 3815258476326283335
+      Camara de Comercio_1: -227997286546012875
+      Camara de Comercio_10: -8643953878525882400
+      Camara de Comercio_11: -7909772339979208555
+      Camara de Comercio_12: -3094625999855710619
+      Camara de Comercio_13: -5196660009875640392
+      Camara de Comercio_14: 7353524745543093418
+      Camara de Comercio_15: 7323389879015303110
+      Camara de Comercio_16: -2133703523704294703
+      Camara de Comercio_17: -8427813933950205929
+      Camara de Comercio_18: -3192933527152289377
+      Camara de Comercio_19: 1343081866710892180
+      Camara de Comercio_2: -5593773342742316800
+      Camara de Comercio_20: 5291637166136905035
+      Camara de Comercio_21: -101140566693409152
+      Camara de Comercio_22: -437205780473821023
+      Camara de Comercio_23: 5878710433150959191
+      Camara de Comercio_24: -5903695464781165969
+      Camara de Comercio_25: -9097076284539677826
+      Camara de Comercio_26: -894146635155306189
+      Camara de Comercio_27: -20529624698684796
+      Camara de Comercio_28: 4843697015787865985
+      Camara de Comercio_29: -4192439662377620536
+      Camara de Comercio_3: -6485200122743645496
+      Camara de Comercio_30: 7949003134591129375
+      Camara de Comercio_31: -133045572385541993
+      Camara de Comercio_32: -4397002501124664042
+      Camara de Comercio_33: -1235517416900167208
+      Camara de Comercio_34: -8462793062681945128
+      Camara de Comercio_35: 8264998897257239442
+      Camara de Comercio_36: -8606975224688981959
+      Camara de Comercio_37: -1966937660952675617
+      Camara de Comercio_38: 8053479969049324185
+      Camara de Comercio_39: -4745438183862589497
+      Camara de Comercio_4: -8863755837240835932
+      Camara de Comercio_5: 3555289868393605942
+      Camara de Comercio_6: -6937530897222757999
+      Camara de Comercio_7: -7376240804243376043
+      Camara de Comercio_8: 1132217772516881707
+      Camara de Comercio_9: 5373177822508817722
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

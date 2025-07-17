@@ -63,7 +63,6 @@ public class ButtonManager : MonoBehaviour
         if (guessedType == currentScenarioType)
         {
             Debug.Log("Correct type selected: " + guessedType);
-            
             correctGuessEvent.Invoke();
             SetupNotificationButtons();
         }
@@ -73,16 +72,26 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
+    void ValidateNotificationChoice (string selectedNotification) {
+        if (selectedNotification == correctNotificationID) {
+            Debug.Log("Correct notification method");
+            correctNotifEvent.Invoke();
+        }
+        else {
+            Debug.Log("Incorrect notification method, try again!");
+            StartCoroutine(IncorrectMessage()); 
+        }
+    }
+
     void SetupNotificationButtons() {
         foreach (Button btn in notificationButtons) {
             string notifyOption = btn.name;
 
             btn.onClick.RemoveAllListeners();
-            btn.onClick.AddListener(() => ValidateTypeGuess(notifyOption));
-
-            correctNotifEvent.Invoke();
+            btn.onClick.AddListener(() => ValidateNotificationChoice(notifyOption));
         }
     }
+
     IEnumerator IncorrectMessage() {
         IncorrectGuess.gameObject.SetActive(true);
         yield return new WaitForSeconds(1.25f);

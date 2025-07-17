@@ -28,4 +28,16 @@ public class TimerManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(elapsedTime % 60);
         return $"{minutes:00}:{seconds:00}";
     }
+
+    public void ResetTimer(bool autostart = true) { 
+        elapsedTime = 0f;
+        isRunning = autostart;
+
+        if (liveTimer != null)
+            liveTimer.text = GetFormattedTime();
+    }
+
+    public void OnEndButton() { 
+        TimerManager.Instance.ResetTimer();
+    }
 }

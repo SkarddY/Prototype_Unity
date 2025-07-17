@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndManager : MonoBehaviour
 {
@@ -9,5 +10,8 @@ public class EndManager : MonoBehaviour
 
         string finaltime = TimerManager.Instance.GetFormattedTime();
         timeDisplay.text = "Tu tiempo fue: " + finaltime; 
+    }
+    public void ReturnToMenu() {
+        SceneManager.LoadScene(0);
     }
 }
