@@ -16,10 +16,10 @@ EditorBuildSettings:
     guid: 49e63d58d8da9364ab42f85b1aaec1d5
   - enabled: 1
     path: Assets/Scenes/Second Prototype/Nivel 2.unity
-    guid: ea14883cefc23f243b02a36b1fdf18b3
+    guid: c7318bbac0b821f40a4e271b91702d53
   - enabled: 1
     path: Assets/Scenes/Second Prototype/Nivel 3.unity
-    guid: 19f3b74211a4cdf4fb9a280343e09fa5
+    guid: d71646b5d16b22844abfb5140c5ae1b2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
