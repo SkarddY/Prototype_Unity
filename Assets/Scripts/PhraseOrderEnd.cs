@@ -5,28 +5,23 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class PhraseOrderChecker : MonoBehaviour
+public class PhraseOrderEnd: MonoBehaviour
 {
     public string phraseTag = "Phrase";
     public string positionTag = "PosSnap";
     public Button confirmButton;
-    public GameObject endMessagePanel;
     public TextMeshProUGUI resultMessage;
     public PhraseSpawn phraseSpawn;
     [SerializeField] UnityEvent correctEndEvent;
 
-    //Correct message depending on scenario and type.
-    public string scenarioID;
-    public string scenarioType;
-
     private List<GameObject> draggablePhrases = new List<GameObject>();
     private List<GameObject> correctPositions = new List<GameObject>();
 
-    void Start() {
+    void Start()
+    {
         if (correctEndEvent == null) correctEndEvent = new UnityEvent();
         correctEndEvent.AddListener(OnEventTriggered);
 
-        endMessagePanel.gameObject.SetActive(false);
         resultMessage.text = "";
         draggablePhrases = GameObject.FindGameObjectsWithTag(phraseTag).OrderBy(obj => obj.name).ToList();
         correctPositions = GameObject.FindGameObjectsWithTag(positionTag).OrderBy(obj => obj.name).ToList();
@@ -54,12 +49,9 @@ public class PhraseOrderChecker : MonoBehaviour
 
         if (isCorrect)
         {
-            endMessagePanel.gameObject.SetActive(true);
-            string messageToShow = $"¡Correcto! al parecer era un problema de {scenarioID} y la solución tomará {scenarioType}";
-            resultMessage.text = messageToShow;
-            resultMessage.color = Color.green;
-            //correctEndEvent.Invoke();
+            correctEndEvent.Invoke();
         }
+        
         else
         {
             resultMessage.text = "El orden está incorrecto";
@@ -68,21 +60,19 @@ public class PhraseOrderChecker : MonoBehaviour
         }
     }
 
-    private void OnEventTriggered() {
+    private void OnEventTriggered()
+    {
         Debug.Log("Evento de orden correcto");
     }
 
-    private void ResetPosition() {
+    private void ResetPosition()
+    {
         if (phraseSpawn == null) return;
         DragPhrases.ClearOccupiedPositions();
 
-        foreach (var phrase in draggablePhrases) {
+        foreach (var phrase in draggablePhrases)
+        {
             phraseSpawn.ResetPhrasePosition(phrase);
         }
-    }
-
-    public void InitializeScenario(string id, string type) { 
-        scenarioID = id;
-        scenarioType = type;
     }
 }

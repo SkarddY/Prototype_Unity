@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using DialogueEditor;
 using TMPro;
 using UnityEngine;
@@ -21,11 +22,14 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject convoManager;
     [SerializeField] private NPCConversation[] scenarioConvos;
 
-    //This is for continuing to the next stage after guessing correctly the type
+    //End Checklist
     [SerializeField] private TextMeshProUGUI IncorrectGuess;
     [SerializeField] private UnityEvent correctGuessEvent;
-    [SerializeField] private Button[] notificationButtons;
-    [SerializeField] private UnityEvent correctNotifEvent;
+    [SerializeField] private GameObject menorChecklist;
+    [SerializeField] private GameObject moderadoChecklist;
+    [SerializeField] private GameObject mayorChecklist;
+    [SerializeField] private GameObject superiorChecklist;
+
 
     void Start() {
         foreach (ScenarioData data in scenarioData)
@@ -52,6 +56,16 @@ public class ButtonManager : MonoBehaviour
         currentScenarioType = chosen.type;
         correctNotificationID = chosen.correctNotification;
 
+        if (chosen.checklist != null)
+        {
+            PhraseOrderChecker checker = chosen.checklist.GetComponent<PhraseOrderChecker>();
+            if (checker != null)
+            {
+                checker.InitializeScenario(chosen.scenarioName, chosen.scenarioTime);
+            }
+        }
+
+
         if (chosen.conversation != null && ConversationManager.Instance != null)
         {
             ConversationManager.Instance.StartConversation(chosen.conversation);
@@ -59,12 +73,11 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
-    void ValidateTypeGuess(string guessedType) {
+   void ValidateTypeGuess(string guessedType) {
         if (guessedType == currentScenarioType)
         {
             Debug.Log("Correct type selected: " + guessedType);
             correctGuessEvent.Invoke();
-            SetupNotificationButtons();
         }
         else {
             StartCoroutine(IncorrectMessage());
@@ -72,27 +85,37 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
-    void ValidateNotificationChoice (string selectedNotification) {
-        if (selectedNotification == correctNotificationID) {
-            Debug.Log("Correct notification method");
-            correctNotifEvent.Invoke();
+    public void ValidateNotificationByType(string buttonType) {
+        if (buttonType == correctNotificationID)
+        {
+            Debug.Log("Correct Notification: " + buttonType);
+
+            switch (buttonType)
+            {
+                case "Menor":
+                    menorChecklist.SetActive(true);
+                    break;
+                case "Moderado":
+                    moderadoChecklist.SetActive(true);
+                    break;
+                case "Mayor":
+                    mayorChecklist.SetActive(true);
+                    break;
+                case "Superior":
+                    superiorChecklist.SetActive(true);
+                    break;
+                default:
+                    Debug.LogWarning("No GameObject: " + buttonType);
+                    break;
+            }
         }
         else {
             Debug.Log("Incorrect notification method, try again!");
-            StartCoroutine(IncorrectMessage()); 
+            StartCoroutine(IncorrectMessage());
         }
     }
 
-    void SetupNotificationButtons() {
-        foreach (Button btn in notificationButtons) {
-            string notifyOption = btn.name;
-
-            btn.onClick.RemoveAllListeners();
-            btn.onClick.AddListener(() => ValidateNotificationChoice(notifyOption));
-        }
-    }
-
-    IEnumerator IncorrectMessage() {
+    public IEnumerator IncorrectMessage() {
         IncorrectGuess.gameObject.SetActive(true);
         yield return new WaitForSeconds(1.25f);
         IncorrectGuess.gameObject.SetActive(false);
