@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -13,6 +14,7 @@ public class PhraseOrderEnd: MonoBehaviour
     public TextMeshProUGUI resultMessage;
     public PhraseSpawn phraseSpawn;
     [SerializeField] UnityEvent correctEndEvent;
+    [SerializeField] GameObject endMessagePanel;
 
     private List<GameObject> draggablePhrases = new List<GameObject>();
     private List<GameObject> correctPositions = new List<GameObject>();
@@ -22,7 +24,7 @@ public class PhraseOrderEnd: MonoBehaviour
         if (correctEndEvent == null) correctEndEvent = new UnityEvent();
         correctEndEvent.AddListener(OnEventTriggered);
 
-        resultMessage.text = "";
+        resultMessage.text = ""; endMessagePanel.SetActive(false);
         draggablePhrases = GameObject.FindGameObjectsWithTag(phraseTag).OrderBy(obj => obj.name).ToList();
         correctPositions = GameObject.FindGameObjectsWithTag(positionTag).OrderBy(obj => obj.name).ToList();
 
@@ -49,13 +51,12 @@ public class PhraseOrderEnd: MonoBehaviour
 
         if (isCorrect)
         {
-            correctEndEvent.Invoke();
+            StartCoroutine(correctOrder());
         }
         
         else
         {
-            resultMessage.text = "El orden está incorrecto";
-            resultMessage.color = Color.red;
+            StartCoroutine(ErrorMessage());
             ResetPosition();
         }
     }
@@ -63,6 +64,21 @@ public class PhraseOrderEnd: MonoBehaviour
     private void OnEventTriggered()
     {
         Debug.Log("Evento de orden correcto");
+    }
+
+    private IEnumerator ErrorMessage()
+    {
+        endMessagePanel.SetActive(true);
+        resultMessage.text = "El orden está incorrecto, intenta nuevamente";
+        resultMessage.color = Color.red;
+        yield return new WaitForSeconds(2.15f);
+        endMessagePanel.SetActive(false);
+        resultMessage.text = " ";
+    }
+    private IEnumerator correctOrder()
+    {
+        yield return new WaitForSeconds(2.5f);
+        correctEndEvent.Invoke();
     }
 
     private void ResetPosition()

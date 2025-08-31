@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -58,12 +59,11 @@ public class PhraseOrderChecker : MonoBehaviour
             string messageToShow = $"¡Correcto! al parecer era un problema de {scenarioID} y la solución tomará {scenarioType}";
             resultMessage.text = messageToShow;
             resultMessage.color = Color.green;
-            //correctEndEvent.Invoke();
+            StartCoroutine(correctOrder());
         }
         else
         {
-            resultMessage.text = "El orden está incorrecto";
-            resultMessage.color = Color.red;
+            StartCoroutine(ErrorMessage());
             ResetPosition();
         }
     }
@@ -79,6 +79,20 @@ public class PhraseOrderChecker : MonoBehaviour
         foreach (var phrase in draggablePhrases) {
             phraseSpawn.ResetPhrasePosition(phrase);
         }
+    }
+
+    private IEnumerator ErrorMessage() { 
+        endMessagePanel.SetActive(true);
+        resultMessage.text = "El orden está incorrecto, intenta nuevamente";
+        resultMessage.color = Color.red;
+        yield return new WaitForSeconds(2.15f);
+        endMessagePanel.SetActive(false);
+        resultMessage.text = " ";
+    }
+
+    private IEnumerator correctOrder() {
+        yield return new WaitForSeconds(2.5f);
+        correctEndEvent.Invoke();
     }
 
     public void InitializeScenario(string id, string type) { 
