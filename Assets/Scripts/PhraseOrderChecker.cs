@@ -18,7 +18,7 @@ public class PhraseOrderChecker : MonoBehaviour
 
     //Correct message depending on scenario and type.
     public string scenarioID;
-    public string scenarioType;
+    public string scenarioTime; 
 
     private List<GameObject> draggablePhrases = new List<GameObject>();
     private List<GameObject> correctPositions = new List<GameObject>();
@@ -56,7 +56,7 @@ public class PhraseOrderChecker : MonoBehaviour
         if (isCorrect)
         {
             endMessagePanel.gameObject.SetActive(true);
-            string messageToShow = $"¡Correcto! al parecer era un problema de {scenarioID} y la solución tomará {scenarioType}";
+            string messageToShow = $"¡Correcto! al parecer era un problema de {scenarioID} y la solución tomará {scenarioTime}";
             resultMessage.text = messageToShow;
             resultMessage.color = Color.green;
             StartCoroutine(correctOrder());
@@ -97,6 +97,6 @@ public class PhraseOrderChecker : MonoBehaviour
 
     public void InitializeScenario(string id, string type) { 
         scenarioID = id;
-        scenarioType = type;
+        scenarioTime = type;
     }
 }

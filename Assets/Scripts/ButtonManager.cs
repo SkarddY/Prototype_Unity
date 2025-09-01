@@ -22,14 +22,23 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject convoManager;
     [SerializeField] private NPCConversation[] scenarioConvos;
 
+    //Default Checklist
+    [SerializeField] private GameObject defaultChecklist;
+
+    //Individual Checklist
+    [SerializeField] private GameObject menorSkip;
+    [SerializeField] private GameObject moderadoChecklist;
+    [SerializeField] private GameObject mayorChecklist;
+    [SerializeField] private GameObject superiorChecklist;
+
     //End Checklist
     [SerializeField] private TextMeshProUGUI IncorrectGuess;
     [SerializeField] private TextMeshProUGUI IncorrectScalingTxt;
     [SerializeField] private UnityEvent correctGuessEvent;
-    [SerializeField] private GameObject menorChecklist;
-    [SerializeField] private GameObject moderadoChecklist;
-    [SerializeField] private GameObject mayorChecklist;
-    [SerializeField] private GameObject superiorChecklist;
+    [SerializeField] private GameObject menorChecklistF;
+    [SerializeField] private GameObject moderadoChecklistF;
+    [SerializeField] private GameObject mayorChecklistF;
+    [SerializeField] private GameObject superiorChecklistF;
 
 
     void Start() {
@@ -57,15 +66,11 @@ public class ButtonManager : MonoBehaviour
         currentScenarioType = chosen.type;
         correctNotificationID = chosen.correctNotification;
 
-        if (chosen.checklist != null)
+        PhraseOrderChecker checker = defaultChecklist.GetComponent<PhraseOrderChecker>();
+        if (checker != null)
         {
-            PhraseOrderChecker checker = chosen.checklist.GetComponent<PhraseOrderChecker>();
-            if (checker != null)
-            {
-                checker.InitializeScenario(chosen.scenarioName, chosen.scenarioTime);
-            }
+            checker.InitializeScenario(chosen.scenarioName, chosen.scenarioTime);
         }
-
 
         if (chosen.conversation != null && ConversationManager.Instance != null)
         {
@@ -78,7 +83,29 @@ public class ButtonManager : MonoBehaviour
         if (guessedType == currentScenarioType)
         {
             Debug.Log("Correct type selected: " + guessedType);
-            correctGuessEvent.Invoke();
+            moderadoChecklist.SetActive(false); mayorChecklist.SetActive(false); superiorChecklist.SetActive(false);
+
+            switch (guessedType) {
+                case "Menor":
+                    correctGuessEvent.Invoke();
+                    menorSkip.SetActive(true);
+                    break;
+                case "Moderado":
+                    correctGuessEvent.Invoke();
+                    moderadoChecklist.SetActive(true);
+                    break;
+                case "Mayor":
+                    correctGuessEvent.Invoke();
+                    mayorChecklist.SetActive(true);
+                    break;
+                case "Superior":
+                    correctGuessEvent.Invoke();
+                    superiorChecklist.SetActive(true);
+                    break;
+                default:
+                    Debug.LogWarning("Unknown type: " + guessedType);
+                    break;
+            }
         }
         else {
             StartCoroutine(IncorrectMessage());
@@ -94,16 +121,16 @@ public class ButtonManager : MonoBehaviour
             switch (buttonType)
             {
                 case "Menor":
-                    menorChecklist.SetActive(true);
+                    menorChecklistF.SetActive(true);
                     break;
                 case "Moderado":
-                    moderadoChecklist.SetActive(true);
+                    moderadoChecklistF.SetActive(true);
                     break;
                 case "Mayor":
-                    mayorChecklist.SetActive(true);
+                    mayorChecklistF.SetActive(true);
                     break;
                 case "Superior":
-                    superiorChecklist.SetActive(true);
+                    superiorChecklistF.SetActive(true);
                     break;
                 default:
                     Debug.LogWarning("No GameObject: " + buttonType);
