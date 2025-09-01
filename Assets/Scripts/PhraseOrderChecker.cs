@@ -91,7 +91,7 @@ public class PhraseOrderChecker : MonoBehaviour
     }
 
     private IEnumerator correctOrder() {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(5.25f);
         correctEndEvent.Invoke();
     }
 

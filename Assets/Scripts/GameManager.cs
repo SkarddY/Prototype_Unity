@@ -17,16 +17,19 @@ public class GameManager : MonoBehaviour
     }
 
     public void OnReporteLoad() {
-        SceneManager.LoadScene("Nivel 0");
+        StartCoroutine(DoError());
+        //SceneManager.LoadScene("Nivel 0");
     }
     public void OnLvl1Load() {
         SceneManager.LoadScene("Nivel 1");
     }
     public void OnLvl2Load() {
-        SceneManager.LoadScene("Nivel 2");
+        StartCoroutine(DoError());
+        //SceneManager.LoadScene("Nivel 2");
     }
     public void OnLvl3Load() {
-        SceneManager.LoadScene("Nivel 3");
+        StartCoroutine(DoError());
+        //SceneManager.LoadScene("Nivel 3");
     }
     public void OnExitButton() {
         Debug.Log("Closing App");

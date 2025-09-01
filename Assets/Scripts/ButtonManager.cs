@@ -24,6 +24,7 @@ public class ButtonManager : MonoBehaviour
 
     //End Checklist
     [SerializeField] private TextMeshProUGUI IncorrectGuess;
+    [SerializeField] private TextMeshProUGUI IncorrectScalingTxt;
     [SerializeField] private UnityEvent correctGuessEvent;
     [SerializeField] private GameObject menorChecklist;
     [SerializeField] private GameObject moderadoChecklist;
@@ -111,7 +112,7 @@ public class ButtonManager : MonoBehaviour
         }
         else {
             Debug.Log("Incorrect notification method, try again!");
-            StartCoroutine(IncorrectMessage());
+            StartCoroutine(IncorrectScaling());
         }
     }
 
@@ -119,5 +120,11 @@ public class ButtonManager : MonoBehaviour
         IncorrectGuess.gameObject.SetActive(true);
         yield return new WaitForSeconds(1.25f);
         IncorrectGuess.gameObject.SetActive(false);
+    }
+
+    private IEnumerator IncorrectScaling() { 
+        IncorrectScalingTxt.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1.25f);
+        IncorrectScalingTxt.gameObject.SetActive(false);
     }
 }

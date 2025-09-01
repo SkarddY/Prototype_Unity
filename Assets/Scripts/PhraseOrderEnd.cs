@@ -77,7 +77,12 @@ public class PhraseOrderEnd: MonoBehaviour
     }
     private IEnumerator correctOrder()
     {
-        yield return new WaitForSeconds(2.5f);
+        endMessagePanel.SetActive(true);
+        resultMessage.text = "El orden está correcto";
+        resultMessage.color = Color.green;
+        yield return new WaitForSeconds(1.75f);
+        endMessagePanel.SetActive(false);
+        resultMessage.text = " ";
         correctEndEvent.Invoke();
     }
 
