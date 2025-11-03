@@ -1,16 +1,23 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RestartScene : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject restartText;
+    public float timer = 0f;
 
-    // Update is called once per frame
-    void Update()
-    {
+    private void Update() {
         
+        if (Input.GetKey(KeyCode.Escape)) {
+            timer += Time.deltaTime;
+            restartText.SetActive(true);
+        }
+        else {
+            restartText.SetActive(false);
+            timer = 0;
+            return;
+        }
+        
+        if (timer >= 3f) SceneManager.LoadScene("Nivel 1");
     }
 }

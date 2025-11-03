@@ -13,7 +13,7 @@ public class EmailDeepLink : MonoBehaviour
 
     public void Start()
     {
-        recipientInput.text = "nicolas.b.gomez@outlook.com";
+        recipientInput.text = "";
         subjectInput.text = "Resultado del simulacro";
     }
 
